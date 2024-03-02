@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
+.dark body {
+  --tw-bg-opacity: 1;
+  background-color: white;
+}
+
+.cde .sd {
+  display: hidden;
+}
+
+.cde:hover .sd {
+  display: block;
+}
+
+.shim-green {
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(0, 255, 0, 0.7);
+}
+.shim-green::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(233, 233, 233, 1) 0,
+    rgba(233, 233, 233, 0.9) 50%,
+    rgba(233, 233, 233, 0.8) 100%
+  );
+  animation: shimmer 2s ease-out infinite;
+  content: "";
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(0%);
+    opacity: 0;
+  }
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+.fade-on-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-in-out, transform 600ms ease-in-out,
+    visibility 1200ms ease-in-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-on-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
