@@ -13,7 +13,7 @@ function footer() {
   return (
     <>
       
-      <section className="w-full border-t-2 border-t-slate-100 dark:border-t-slate-900">
+      <section className="w-screen border-t-2 border-t-slate-100 dark:border-t-slate-900">
         <div className="px-8 py-12 mx-auto max-w-7xl">
           <div className="grid grid-cols-2 gap-10 mb-3 md:grid-cols-3 lg:grid-cols-12 lg:gap-20">
             <div className="col-span-6 ">
@@ -47,7 +47,7 @@ function footer() {
                 pages.
               </p>
             </div>
-            <nav className="col-span-12 md:col-span-1 lg:col-span-6 text-white dark:text-zinc-700">
+            <nav className="col-span-8 md:col-span-1 lg:col-span-6 text-white dark:text-zinc-700">
               <p className="mb-3 text-xs font-semibold tracking-wider text-gray-400 uppercase">
                 Attributions - from
               </p>
