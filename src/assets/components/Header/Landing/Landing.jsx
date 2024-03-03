@@ -2,7 +2,8 @@ import React, { lazy, useState } from "react";
 const LazyHero = React.lazy(() => import("../Hero/Hero"));
 const LazySkillset = React.lazy(() => import("../../Skill/Skillset"));
 const LazyProject = React.lazy(() => import("../../Projects/project"));
-
+const LazyContact = React.lazy(() => import("../../Contact/contact"));
+const LazyFooter = React.lazy(() => import("../../footer/footer"));
 function FadeInSection(props) {
   const [isVisible, setVisible] = React.useState(false);
   const domRef = React.useRef();
@@ -33,6 +34,12 @@ function Landing() {
       </FadeInSection>
       <FadeInSection>
         <LazyProject />
+      </FadeInSection>
+      <FadeInSection>
+        <LazyContact />
+      </FadeInSection>
+      <FadeInSection>
+        <LazyFooter />
       </FadeInSection>
     </>
   );

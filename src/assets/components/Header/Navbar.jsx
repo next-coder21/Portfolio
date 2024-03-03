@@ -5,6 +5,7 @@ import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Navbar() {
+  
   const [enabled, setEnabled] = useState(false);
 
   const handleToggle = () => {
@@ -14,7 +15,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="  sticky top-0 z-10 bg-transparent backdrop-filter backdrop-blur-lg bg-opacity-30 ">
+      <nav className="  sticky top-0 z-10 bg-transparent backdrop-filter backdrop-blur-lg bg-opacity-30 border-b-2 border-b-slate-100 dark:border-b-slate-900">
         <div className="flex justify-between p-5 ">
           <h2 className="text-2xl dark:text-zinc-700 text-white font-extrabold">
             LIJI.Dev
@@ -32,22 +33,23 @@ function Navbar() {
               </label>
             </li>
             <li>
-              <Link>
+            <a href="https://github.com/next-coder21" target="_blank">
                 <p className="text-white dark:text-zinc-700 font-semibold text-2xl">
                   <FontAwesomeIcon icon={faGithub} />
                 </p>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link>
+              <a href="https://www.linkedin.com/in/lijish-wilson-s/" target="_blank">
+              
                 <p className="text-white dark:text-zinc-700 font-semibold text-2xl">
                   <FontAwesomeIcon icon={faLinkedinIn} />
                 </p>
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
-        <hr />
+       
       </nav>
     </>
   );

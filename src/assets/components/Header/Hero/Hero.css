@@ -5,10 +5,11 @@
   -webkit-backdrop-filter: blur(6.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  border-color: black;
 }
 
 .sta{
-  background: #254632;
+  background: rgb(12 74 110);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(6.5px);
   -webkit-backdrop-filter: blur(6.5px);
@@ -34,4 +35,12 @@
 }
 .dark .image-cropper:hover {
   filter: drop-shadow(0 0 0.75rem #e91f64);
+}
+
+.hr{
+color: #257ae9;
+}
+
+.dark .hr{
+color: #e91f64;
 }

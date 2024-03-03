@@ -75,3 +75,11 @@ body {
   transform: none;
   visibility: visible;
 }
+
+@media only screen and (max-width: 600px) {
+  .igcs{
+    width: 240px;
+    height: 240px;
+    padding-top: 20px;
+  }
+}
