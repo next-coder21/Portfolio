@@ -43,8 +43,7 @@ function footer() {
                 </a>
               </div>
               <p className="my-4 text-xs leading-normal text-gray-500">
-                Beautifully hand-crafted components to help you build amazing
-                pages.
+                Created using Html, Css, Reactjs, Tailwind css.
               </p>
             </div>
             <nav className="col-span-8 md:col-span-1 lg:col-span-6 text-white dark:text-zinc-700">
