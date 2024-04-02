@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import User from "../logou.png";
+
 import Resume from "../../../images/LijishResume.pdf";
 
 function Hero() {
@@ -36,7 +36,7 @@ function Hero() {
           </div>
           <img
             className="rounded-lg w-96 h-96 mx-auto igcs image-cropper"
-            src={User}
+            src="https://ucarecdn.com/474fb129-5b37-4031-8730-cbcd5a9de0c8/-/preview/1000x1000/"
           />
         </div>
       </section>

@@ -20,6 +20,40 @@ function project() {
           <span className="text-white dark:text-zinc-700">My</span> Projects
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10 p-10">
+        <div className="text-center std h92 p-2 image-cropper">
+            <img src="https://ucarecdn.com/84c63b7c-2095-4200-9ce3-e0cfb71d341b/-/preview/1000x477/" className="pt-3 pr-3 pl-3 rounded-lg " />
+            <div className="mt-4 px-1 sta">
+              <h1 className="block text-lg font-semibold text-white text-center tracking-wide pt-2">
+                ALPHA CARS
+              </h1>
+              <p className="text-white text-sm pt-2">
+                Currently working in a fullstack Car Rental application, In which we can able to book Cars
+              </p>
+              <p className="pl-2 pt-2 text-start text-sm text-zinc-300">
+                <span className="font-bold">Skills :</span> HTML, JS, React
+                js, Tailwind CSS, Springboot, postgresSQL.
+              </p>
+              <div className="flex justify-between mt-3 pb-2">
+                <div className="flex-[30%] text-center text-sky-200 p-1 [&:nth-child(2)]:border-x-sky-700/70  [&:nth-child(2)]:border-l [&:nth-child(2)]:border-solid [&:nth-child(2)]:border-r">
+                  <a
+                    href="https://github.com/next-coder21/ALPHA-Car-Rental"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faBook} /> GitHub Link
+                  </a>
+                </div>
+
+                <div className="flex-[30%] text-center text-sky-200 p-1 [&:nth-child(2)]:border-x-sky-700/70 [&:nth-child(2)]:border-l [&:nth-child(2)]:border-solid ">
+                  <a
+                    href="https://alpha-car-rental.vercel.app/"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faRocket} /> Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="text-center std h92 p-2 image-cropper">
             <img src={hospital} className="pt-3 pr-3 pl-3 rounded-lg " />
             <div className="mt-4 px-1 sta">
