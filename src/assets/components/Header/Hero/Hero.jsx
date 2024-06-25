@@ -1,7 +1,7 @@
 import React from "react";
 import "./Hero.css";
 
-import Resume from "../../../images/LijishResume.pdf";
+import Resume from "../../../images/Resume.pdf";
 
 function Hero() {
   return (
