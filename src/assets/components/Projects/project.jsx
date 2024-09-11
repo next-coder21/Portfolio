@@ -45,7 +45,7 @@ function project() {
 
                 <div className="flex-[30%] text-center text-sky-200 p-1 [&:nth-child(2)]:border-x-sky-700/70 [&:nth-child(2)]:border-l [&:nth-child(2)]:border-solid ">
                   <a
-                    href="https://alpha-car-rental.vercel.app/"
+                    href="https://alpha-rental-v2.vercel.app/"
                     target="_blank"
                   >
                     <FontAwesomeIcon icon={faRocket} /> Demo
